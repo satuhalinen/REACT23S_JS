@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Insurance app</title>
+  </head>
+  <body>
+   
+    <div id="container">
+    
+      <form>
+        <h1>Health information form</h1>
+        <p>
+            In this form you provide your personal information and health-related
+            details for insurance purposes. After sections (1) Name and (2) Age
+            there are three different sections: (3) Current Health, (4) Good Health
+            Habits and (5) Unhealthy Habits. Please answer honestly.
+          </p>
+        <h2>(1) Name</h1>
+        <div class="name">
+          <label for="name" class="nameage">Enter your name:</label>
+
+          <input type="text" class="feed" name="name" id="name" size="30" />
+        </div>
+
+        <!-- Age below. -->
+        <h2>(2) Age</h1>
+        <div class="age">
+          <label for="age" class="nameage">Enter your age:</label>
+          <input type="number" class="feed" name="age" id="age" size="30" />
+        </div>
+
+        <!-- Current health below. -->
+        <h2>(3) Current Health</h2>
+        <div>
+          <p>
+            The next three checkboxes represent your current health status. You
+            can select from zero to three (0-3) options.
+          </p>
+          <input type="checkbox" id="hypertension" name="hypertension" />
+          <label for="hypertension">Hypertension</label>
+        </div>
+
+        <div>
+          <input type="checkbox" id="sugar" name="sugar" />
+          <label for="sugar">High Blood Sugar</label>
+        </div>
+
+        <div>
+          <input type="checkbox" id="overweight" name="overweight" />
+          <label for="overweight">Overweight</label>
+        </div>
+
+        <!-- Good habits below. -->
+        <h2>(4) Good Health Habits</h2>
+        <p>
+          The next six checkboxes represent your good health habits. You can
+          select from zero to six (0-6) options.
+        </p>
+        <div>
+          <input type="checkbox" id="exercise" name="exercise" />
+          <label for="exercise">Regular Exercise: Engaging in physical activity and exercise on a regular basis.</label>
+        </div>
+
+        <div>
+          <input type="checkbox" id="diet" name="diet" />
+          <label for="diet">Healthy Diet: Maintaining a balanced and nutritious diet.</label>
+        </div>
+
+        <div>
+          <input type="checkbox" id="sleep" name="sleep" />
+          <label for="sleep">Adequate Sleep: Ensuring you get enough restful sleep each night.</label>
+        </div>
+
+        <div>
+          <input type="checkbox" id="noStress" name="noStress" />
+          <label for="noStress">Stress Management: Practicing stress-reduction techniques such as meditation or yoga.</label>
+        </div>
+
+        <div>
+          <input type="checkbox" id="noAlcohol" name="noAlcohol" />
+          <label for="noAlcohol">Moderate Alcohol Consumption: Consuming alcohol in moderation, if at all.</label>
+        </div>
+
+        <div>
+          <input type="checkbox" id="noSmoke" name="noSmoke" />
+          <label for="noSmoke">Non-Smoking: Not smoking or using tobacco products.</label>
+        </div>
+        <!-- After this comment line starts the part of bad habits.-->
+        <h2>(5) Unhealthy Habits</h2>
+        <p>
+          The next six checkboxes represent your unhealthy habits. You can
+          select from zero to six (0-6) options.
+        </p>
+        <div>
+          <input type="checkbox" id="smoke" name="smoke" />
+          <label for="smoke">Smoking: Regularly smoking cigarettes or using tobacco products.</label>
+        </div>
+
+        <div>
+          <input type="checkbox" id="alcohol" name="alcohol" />
+          <label for="alcohol">Excessive Alcohol Consumption: Consuming alcohol in large quantities or frequently.</label>
+        </div>
+
+        <div>
+          <input type="checkbox" id="noExercise" name="noExercise" />
+          <label for="noExercise">Lack of Exercise: Leading a sedentary lifestyle with little to no physical activity.</label>
+        </div>
+
+        <div>
+          <input type="checkbox" id="noDiet" name="noDiet" />
+          <label for="noDiet">Poor Diet: Consistently consuming unhealthy foods high in sugar, fats, and processed ingredients.</label>
+        </div>
+
+        <div>
+          <input type="checkbox" id="noSleep" name="noSleep" />
+          <label for="noSleep">Inadequate Sleep: Not getting enough sleep or having irregular sleep patterns.</label>
+        </div>
+
+        <div>
+          <input type="checkbox" id="drugs" name="drugs" />
+          <label for="drugs">Drug Use: Engaging in the use of illegal drugs or misusing prescription medications.</label>
+        </div>
+      </form>
+
+      <p id="score"></p>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
