@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body { 
+    background: #236747;
+    font-family: "Raleway", sans-serif;
+}
+
+a { 
+text-decoration: none;
+color: coral;
+}
+
+a:hover { 
+    color: black;
+}
+
+#container { 
+    margin: 50px auto;
+    margin-bottom: 10px;
+    width: 300px;
+}
+
+.form-wrap {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.form-wrap h1,
+.form-wrap p {
+    margin-bottom: 20px;
+
+} 
+
+.form-group {
+    margin: 20px 0;
+}   
+
+.form-group label {
+    display: block;
+    font-size: 10px;
+    margin-bottom: 5px;
+    color: #474747;
+    text-align: left;
+  
+}   
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #a7a7a7; 
+} 
+
+.form-wrap button {
+    width: 80%;
+    background: coral;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    font-size: 12px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    cursor: pointer;
+} 
+
+.form-wrap .bottom-text {
+    font-size: 12px;
+} 
+
+footer {
+margin: 10px auto;
+margin-bottom: 50px;
+text-align: center;
+color: white;
+}    
+
+.form-wrap .bottom-texts a:hover { 
+    text-decoration: underline;
+}  
+
+footer a:hover { 
+    color: white;
+    font-weight: bold;
+} 
+
+.form-wrap button:hover { 
+background: chocolate;
+} 
