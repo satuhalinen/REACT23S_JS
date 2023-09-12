@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Pizza order application</title>
+  </head>
+  <body>
+    <div class="cards">
+      <div class="card">
+        <form>
+          <div class="name">
+            <label for="name">Customer name</label>
+            <input type="text" name="name" id="name" />
+          </div>
+
+          <p>Choose your pizza's size:</p>
+          <div class="size">
+            <div class="two">
+              <label for="radio2">For 2 (7,50 €)</label>
+              <input type="radio" name="radio" id="radio2" />
+            </div>
+
+            <div class="four">
+              <label for="radio4">For 4 (10,50 €)</label>
+              <input type="radio" name="radio" id="radio4" />
+            </div>
+
+            <div class="six">
+              <label for="radio6">For 6 (12,40 €)</label>
+              <input type="radio" name="radio" id="radio6" />
+            </div>
+
+            <div class="eight">
+              <label for="radio8">For 8 (15,50 €)</label>
+              <input type="radio" name="radio" id="radio8" />
+            </div>
+          </div>
+
+          <p>Choose your pizza's toppings:</p>
+          <div class="toppings">
+            <div>
+              <label for="blueCheese">Blue cheese</label>
+              <input type="checkbox" id="blueCheese" name="blueCheese" />
+            </div>
+
+            <div>
+              <label for="cheese">Cheese</label>
+              <input type="checkbox" id="cheese" name="cheese" />
+            </div>
+
+            <div>
+              <label for="ham">Ham</label>
+              <input type="checkbox" id="ham" name="ham" />
+            </div>
+
+            <div>
+              <label for="mincedMeat">Minced meat</label>
+              <input type="checkbox" id="mincedMeat" name="mincedMeat" />
+            </div>
+
+            <div>
+              <label for="mushroom">Mushroom</label>
+              <input type="checkbox" id="mushroom" name="mushroom" />
+            </div>
+
+            <div>
+              <label for="olive">Olive</label>
+              <input type="checkbox" id="olive" name="olive" />
+            </div>
+
+            <div>
+              <label for="paprika">Paprika</label>
+              <input type="checkbox" id="paprika" name="paprika" />
+            </div>
+
+            <div>
+              <label for="pepperoni">Pepperoni</label>
+              <input type="checkbox" id="pepperoni" name="pepperoni" />
+            </div>
+
+            <div>
+              <label for="pineapple">Pineapple</label>
+              <input type="checkbox" id="pineapple" name="pineapple" />
+            </div>
+
+            <div>
+              <label for="redOnion">Red onion</label>
+              <input type="checkbox" id="redOnion" name="redOnion" />
+            </div>
+
+            <div>
+              <label for="shrimp">Shrimp</label>
+              <input type="checkbox" id="shrimp" name="shrimp" />
+            </div>
+
+            <div>
+              <label for="tunaFish">Tuna fish</label>
+              <input type="checkbox" id="tunaFish" name="tunaFish" />
+            </div>
+          </div>
+
+          <p>Choose your pizza's delivery method:</p>
+          <div class="deliveryoptions">
+            <select name="deliveryOptions" id="deliveryOptions">
+              <option value="homeDelivery">Home delivery (+5 €)</option>
+              <option value="restaurant">Eat at the restaurant (+0 €)</option>
+              <option value="pickUp">
+                Pick up the food from the restaurant (+0 €)
+              </option>
+            </select>
+          </div>
+
+          <p>Your pizza's price is:</p>
+          <div class="price">
+            <p id="price"></p>
+          </div>
+        </form>
+        <!-- form end tag -->
+      </div>
+      <!-- card end tag -->
+      <div class="picture">
+        <img src="IMG-4790[61].jpg" alt="pizza" />
+      </div>
+    </div>
+    <!-- cards end tag -->
+
+    <script src="main.js"></script>
+  </body>
+</html>
