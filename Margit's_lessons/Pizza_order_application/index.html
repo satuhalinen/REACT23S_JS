@@ -9,119 +9,124 @@
   <body>
     <div class="cards">
       <div class="card">
-        <form>
-          <div class="name">
-            <label for="name">Customer name</label>
-            <input type="text" name="name" id="name" />
-          </div>
-
-          <p>Choose your pizza's size:</p>
-          <div class="size">
-            <div class="two">
-              <label for="radio2">For 2 (7,50 €)</label>
-              <input type="radio" name="radio" id="radio2" />
+        <div class="inside">
+          <form>
+            <h1>Pizza order</h1>
+            <div class="name">
+              <label for="name" id="labelname">Customer name:</label>
+              <input type="text" name="name" id="name" />
             </div>
 
-            <div class="four">
-              <label for="radio4">For 4 (10,50 €)</label>
-              <input type="radio" name="radio" id="radio4" />
+            <p>Choose your pizza's size:</p>
+            <div class="size">
+              <div class="two">
+                <input type="radio" name="radio" id="radio2" />
+                <label for="radio2">For 2 (7,50 €)</label>
+              </div>
+
+              <div class="four">
+                <input type="radio" name="radio" id="radio4" />
+                <label for="radio4">For 4 (10,50 €)</label>
+              </div>
+
+              <div class="six">
+                <input type="radio" name="radio" id="radio6" />
+                <label for="radio6">For 6 (12,40 €)</label>
+              </div>
+
+              <div class="eight">
+                <input type="radio" name="radio" id="radio8" />
+                <label for="radio8">For 8 (15,50 €)</label>
+              </div>
             </div>
 
-            <div class="six">
-              <label for="radio6">For 6 (12,40 €)</label>
-              <input type="radio" name="radio" id="radio6" />
+            <p>Choose your pizza's toppings:</p>
+            <div class="toppings">
+              <div>
+                <input type="checkbox" id="blueCheese" name="blueCheese" />
+                <label for="blueCheese">Blue cheese</label>
+              </div>
+
+              <div>
+                <input type="checkbox" id="cheese" name="cheese" />
+                <label for="cheese">Cheese</label>
+              </div>
+
+              <div>
+                <input type="checkbox" id="ham" name="ham" />
+                <label for="ham">Ham</label>
+              </div>
+
+              <div>
+                <input type="checkbox" id="mincedMeat" name="mincedMeat" />
+                <label for="mincedMeat">Minced meat</label>
+              </div>
+
+              <div>
+                <input type="checkbox" id="mushroom" name="mushroom" />
+                <label for="mushroom">Mushroom</label>
+              </div>
+
+              <div>
+                <input type="checkbox" id="olive" name="olive" />
+                <label for="olive">Olive</label>
+              </div>
+
+              <div>
+                <input type="checkbox" id="paprika" name="paprika" />
+                <label for="paprika">Paprika</label>
+              </div>
+
+              <div>
+                <input type="checkbox" id="pepperoni" name="pepperoni" />
+                <label for="pepperoni">Pepperoni</label>
+              </div>
+
+              <div>
+                <input type="checkbox" id="pineapple" name="pineapple" />
+                <label for="pineapple">Pineapple</label>
+              </div>
+
+              <div>
+                <input type="checkbox" id="redOnion" name="redOnion" />
+                <label for="redOnion">Red onion</label>
+              </div>
+
+              <div>
+                <input type="checkbox" id="shrimp" name="shrimp" />
+                <label for="shrimp">Shrimp</label>
+              </div>
+
+              <div>
+                <input type="checkbox" id="tunaFish" name="tunaFish" />
+                <label for="tunaFish">Tuna fish</label>
+              </div>
             </div>
 
-            <div class="eight">
-              <label for="radio8">For 8 (15,50 €)</label>
-              <input type="radio" name="radio" id="radio8" />
-            </div>
-          </div>
-
-          <p>Choose your pizza's toppings:</p>
-          <div class="toppings">
-            <div>
-              <label for="blueCheese">Blue cheese</label>
-              <input type="checkbox" id="blueCheese" name="blueCheese" />
+            <p>Choose your pizza's delivery method:</p>
+            <div class="deliveryoptions">
+              <select name="deliveryOptions" id="deliveryOptions">
+                <option value="homeDelivery">Home delivery (+5 €)</option>
+                <option value="restaurant">Eat at the restaurant (+0 €)</option>
+                <option value="pickUp">
+                  Pick up the food from the restaurant (+0 €)
+                </option>
+              </select>
             </div>
 
-            <div>
-              <label for="cheese">Cheese</label>
-              <input type="checkbox" id="cheese" name="cheese" />
+            <p>Your pizza's price is:</p>
+            <div class="price">
+              <p id="price"></p>
             </div>
-
-            <div>
-              <label for="ham">Ham</label>
-              <input type="checkbox" id="ham" name="ham" />
-            </div>
-
-            <div>
-              <label for="mincedMeat">Minced meat</label>
-              <input type="checkbox" id="mincedMeat" name="mincedMeat" />
-            </div>
-
-            <div>
-              <label for="mushroom">Mushroom</label>
-              <input type="checkbox" id="mushroom" name="mushroom" />
-            </div>
-
-            <div>
-              <label for="olive">Olive</label>
-              <input type="checkbox" id="olive" name="olive" />
-            </div>
-
-            <div>
-              <label for="paprika">Paprika</label>
-              <input type="checkbox" id="paprika" name="paprika" />
-            </div>
-
-            <div>
-              <label for="pepperoni">Pepperoni</label>
-              <input type="checkbox" id="pepperoni" name="pepperoni" />
-            </div>
-
-            <div>
-              <label for="pineapple">Pineapple</label>
-              <input type="checkbox" id="pineapple" name="pineapple" />
-            </div>
-
-            <div>
-              <label for="redOnion">Red onion</label>
-              <input type="checkbox" id="redOnion" name="redOnion" />
-            </div>
-
-            <div>
-              <label for="shrimp">Shrimp</label>
-              <input type="checkbox" id="shrimp" name="shrimp" />
-            </div>
-
-            <div>
-              <label for="tunaFish">Tuna fish</label>
-              <input type="checkbox" id="tunaFish" name="tunaFish" />
-            </div>
-          </div>
-
-          <p>Choose your pizza's delivery method:</p>
-          <div class="deliveryoptions">
-            <select name="deliveryOptions" id="deliveryOptions">
-              <option value="homeDelivery">Home delivery (+5 €)</option>
-              <option value="restaurant">Eat at the restaurant (+0 €)</option>
-              <option value="pickUp">
-                Pick up the food from the restaurant (+0 €)
-              </option>
-            </select>
-          </div>
-
-          <p>Your pizza's price is:</p>
-          <div class="price">
-            <p id="price"></p>
-          </div>
-        </form>
-        <!-- form end tag -->
+          </form>
+          <!-- form end tag -->
+        </div>
       </div>
       <!-- card end tag -->
       <div class="picture">
-        <img src="IMG-4790[61].jpg" alt="pizza" />
+        <div class="circle" id="priceCircle">
+          <p id="priceCircle"></p>
+      
       </div>
     </div>
     <!-- cards end tag -->
@@ -129,3 +134,5 @@
     <script src="main.js"></script>
   </body>
 </html>
+
+
