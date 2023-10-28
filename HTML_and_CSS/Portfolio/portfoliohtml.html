@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1.0"
+    />
+    <meta
+      name="description"
+      content="Satu's portfolio on her HTML and CSS skills"
+    />
+    <meta name="author" content="Satu Halinen" />
+    <meta name="keywords" content="HTML, CSS" />
+
+    <title>Portfolio</title>
+
+    <link rel="stylesheet" type="text/css" href="portfoliocss.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="/microbiology_FILL0_wght400_GRAD0_opsz24.png"
+    />
+  </head>
+
+  <body>
+    <header>
+      <div class="hero-banner">
+        <figure class="hero-image">
+          <a href="#default" class="logo">Satu Halinen</a>
+          <h1>My Portfolio</h1>
+          <nav>
+            <button class="mobile">
+              <span class="material-symbols-outlined"> menu </span>
+            </button>
+            <ul>
+              <li><a href="#Projects">Projects</a></li>
+              <li><a href="#About_me">About me</a></li>
+              <li><a href="gallery.html">Gallery</a></li>
+              <li><a href="#Skills">Skills</a></li>
+              <li><a href="https://www.bc.fi/">More about BCH</a></li>
+            </ul>
+          </nav>
+        </figure>
+      </div>
+    </header>
+    <div class="bigThree">
+      <h2 id="Projects">Projects</h2>
+      <div class="projects">
+        <div class="firstSmall">
+          <img src="image_50411265.JPG" alt="Ice chips" />
+          <h3>Decision making application</h3>
+          <p>
+            With decision making application you can make a decision what to
+            eat, what to do with friends and what sports to play.
+          </p>
+          <a
+            href="https://satuhalinen.github.io/REACT23S_JS/Margit's_lessons/Decision_making_app/"
+            >Try it!</a
+          >
+        </div>
+        <div class="secondSmall">
+          <img src="ivan-torres-MQUqbmszGGM-unsplash.jpg" alt="Pizza" />
+
+          <h3>Pizza order application</h3>
+
+          <p>
+            With pizza order application you can calculate the price of a pizza
+            with different toppings.
+          </p>
+          <a
+            href="https://satuhalinen.github.io/REACT23S_JS/Margit's_lessons/Pizza_order_application/"
+            >Try it!</a
+          >
+        </div>
+        <div class="thirdSmall">
+          <img src="aron-visuals-BXOXnQ26B7o-unsplash.jpg" alt="Hourglass" />
+          <h3>Working hours application</h3>
+          <p>
+            Working hours application calculates how many hours you have worked.
+          </p>
+          <a
+            href="https://satuhalinen.github.io/First_projects/Working_hours_app/"
+            >Try it!</a
+          >
+        </div>
+      </div>
+
+      <h2 id="About_me">About me</h2>
+      <div class="aboutMe">
+        <img src="image_67193857.JPG" alt="Sea" />
+        <div class="aboutChapter">
+          <p>
+            I am a Master of Science (Tech.) in biotechnology. Currently I study
+            software development in Business College Helsinki. I'm going to
+            graduate in December 2024.
+          </p>
+        </div>
+      </div>
+    </div>
+    <h2 id="Skills">Skills</h2>
+    <div class="skills">
+      <div class="firstSmall">
+        <p class="CSS">
+          <span class="material-symbols-outlined"> css </span>
+        </p>
+        <h3>CSS</h3>
+        <progress id="fileCSS" max="100" value="30">30%</progress>
+      </div>
+
+      <div class="firstSmall">
+        <p class="CSS">
+          <span class="material-symbols-outlined"> html </span>
+        </p>
+        <h3>HTML</h3>
+        <progress id="fileHTML" max="100" value="30">30%</progress>
+      </div>
+      <div class="firstSmall">
+        <p class="CSS">
+          <span class="material-symbols-outlined"> javascript </span>
+        </p>
+        <h3>JavaScript</h3>
+        <progress id="fileJS" max="100" value="10">10%</progress>
+      </div>
+    </div>
+
+    <div id="container">
+      <div class="form-wrap">
+        <h1>Contact me</h1>
+
+        <form>
+          <div class="form-group">
+            <label for="name">Your name</label>
+            <input type="text" name="name" id="name" />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Your email</label>
+            <input type="email" name="email" id="email" />
+          </div>
+
+          <div class="form-group">
+            <label for="textarea">Message to me</label>
+            <textarea id="textarea" name="textarea" rows="4" cols="27">
+            </textarea>
+          </div>
+          <button type="submit" value="Submit">Send Message</button>
+        </form>
+      </div>
+    </div>
+
+    <footer>
+      <p>Copyright &copy; Satu Halinen 2023</p>
+      <button class="btn" id="backToTop">Back to Top</button>
+    </footer>
+    <script src="main.js"></script>
+  </body>
+</html>
