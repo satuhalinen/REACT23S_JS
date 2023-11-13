@@ -51,7 +51,8 @@ body {
 
 a {
   text-decoration: none;
-  color: black;
+  color: var(--orange);
+  font-size: 1.25rem;
 }
 
 nav ul {
@@ -73,7 +74,7 @@ figure {
 }
 
 a:hover {
-  color: var(--orange);
+  color: var(--white);
 }
 
 .aboutChapter {
@@ -135,6 +136,8 @@ textarea {
   border-radius: 1.25rem;
   text-align: center;
   box-shadow: 5px 5px 5px rgb(98, 123, 174);
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
 .form-group {
@@ -222,8 +225,8 @@ header {
   background-color: var(--white);
   border-radius: 0.3rem;
   text-align: center;
-  height: 40rem;
   flex: 1;
+  padding-bottom: 1.5rem;
 }
 
 .firstSmall img,
@@ -322,4 +325,12 @@ header {
   border-radius: 0.3rem;
   border: none;
   text-transform: uppercase;
+}
+
+ul {
+  backdrop-filter: brightness(30%);
+}
+
+li {
+  margin: 0 1.25rem 0 1.25rem;
 }
