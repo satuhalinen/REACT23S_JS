@@ -7,6 +7,26 @@
     <title>Gallery</title>
   </head>
   <body>
+    <header>
+      <div class="hero-banner">
+        <figure class="hero-image">
+          <a href="#default" class="logo">Satu Halinen</a>
+          <h1>My Portfolio</h1>
+          <nav>
+            <button class="mobile">
+              <span class="material-symbols-outlined"> menu </span>
+            </button>
+            <ul>
+              <li><a href="portfoliohtml.html#Projects">Projects</a></li>
+              <li><a href="portfoliohtml.html#About_me">About me</a></li>
+              <li><a href="gallery.html">Gallery</a></li>
+              <li><a href="portfoliohtml.html#Skills">Skills</a></li>
+              <li><a href="https://www.bc.fi/">More about BCH</a></li>
+            </ul>
+          </nav>
+        </figure>
+      </div>
+    </header>
     <div class="outer">
       <div class="inner">
         <figure class="item first">
@@ -43,5 +63,35 @@
         <img src="image_67532289.JPG" class="galleryImg" alt="Image 9" />
       </figure>
     </div>
+    <div id="container">
+      <div class="form-wrap">
+        <h1>Contact me</h1>
+
+        <form>
+          <div class="form-group">
+            <label for="name">Your name</label>
+            <input type="text" name="name" id="name" />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Your email</label>
+            <input type="email" name="email" id="email" />
+          </div>
+
+          <div class="form-group">
+            <label for="textarea">Message to me</label>
+            <textarea id="textarea" name="textarea" rows="4" cols="27">
+            </textarea>
+          </div>
+          <button type="submit" value="Submit">Send Message</button>
+        </form>
+      </div>
+    </div>
+
+    <footer>
+      <p>Copyright &copy; Satu Halinen 2023</p>
+      <button class="btn" id="backToTop">Back to Top</button>
+    </footer>
+    <script src="main.js"></script>
   </body>
 </html>
