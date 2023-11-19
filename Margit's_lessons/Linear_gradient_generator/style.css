@@ -12,7 +12,7 @@ html {
 
 body {
   font-family: "Source Sans Pro", sans-serif;
-  background-image: linear-gradient(bottom right, #000000, #aa00ff);
+  background-image: linear-gradient(to bottom right, #000000, #aa00ff);
   background-repeat: no-repeat;
   background-attachment: fixed;
   color: white;
